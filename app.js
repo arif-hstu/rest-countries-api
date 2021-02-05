@@ -26,9 +26,16 @@ const createHtmlElement = country => {
 
 
 const changeTheme = () => {
+
     const bodyTag = document.getElementsByTagName('body');
     const card = document.getElementsByClassName('card');
-
+    const head = document.getElementById('head');
+    
+    if(head.style.color === 'white'){
+        window.location.reload();
+    }
+    
+    head.style.color = 'white'
     bodyTag[0].style.color = '#202D36';
     bodyTag[0].style.backgroundColor = '#F3F3F3';
 
