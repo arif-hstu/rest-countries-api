@@ -21,7 +21,6 @@ const createHtmlElement = country => {
         </div>
         `;
         card.innerHTML = cardInfo;
-
         cardHolder.appendChild(card);
 }
 
